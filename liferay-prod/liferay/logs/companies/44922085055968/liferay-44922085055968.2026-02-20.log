@@ -1,0 +1,87 @@
+2026-02-20 13:30:31.654 WARN  [liferay/mail-3][MailMessageListener:123] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-02-20 13:30:31.653 WARN  [liferay/mail-2][MailMessageListener:123] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-02-20 13:30:31.668 WARN  [liferay/mail-3][MailMessageListener:49] Skipping email because the sender is not specified
+2026-02-20 13:30:31.668 WARN  [liferay/mail-2][MailMessageListener:49] Skipping email because the sender is not specified
+2026-02-20 13:30:34.081 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess
+2026-02-20 13:30:34.084 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#verifyCPMeasurementUnits
+2026-02-20 13:30:34.299 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#verifyCPMeasurementUnits in 216 ms
+2026-02-20 13:30:34.300 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess in 219 ms
+2026-02-20 13:30:37.141 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.adaptive.media.document.library.thumbnails.internal.verify.DocumentLibraryThumbnailsConfigurationVerifyProcess
+2026-02-20 13:30:37.152 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.adaptive.media.document.library.thumbnails.internal.verify.DocumentLibraryThumbnailsConfigurationVerifyProcess in 10 ms
+2026-02-20 13:30:37.902 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess
+2026-02-20 13:30:37.905 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#verifyBasePriceLists
+2026-02-20 13:30:37.912 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#verifyBasePriceLists in 7 ms
+2026-02-20 13:30:37.913 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess in 11 ms
+2026-02-20 13:30:39.094 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess
+2026-02-20 13:30:39.096 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountRoles
+2026-02-20 13:30:39.106 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountRoles in 9 ms
+2026-02-20 13:30:39.108 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountGroup
+2026-02-20 13:30:39.111 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountGroup in 2 ms
+2026-02-20 13:30:39.113 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess in 19 ms
+2026-02-20 13:30:39.812 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 1
+2026-02-20 13:30:40.648 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 1 in 835ms
+2026-02-20 13:32:02.841 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:528] Initializing com.liferay.site.initializer.welcome for group 20117
+2026-02-20 13:32:02.848 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDepotEntries took 0 ms
+2026-02-20 13:32:02.849 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking setPLOEntries took 0 ms
+2026-02-20 13:32:02.850 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateSAPEntries took 0 ms
+2026-02-20 13:32:02.852 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateUserGroups took 0 ms
+2026-02-20 13:32:02.853 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateListTypeDefinitions took 1 ms
+2026-02-20 13:32:02.857 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDataDefinitions took 3 ms
+2026-02-20 13:32:02.859 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addStyleBookEntries took 1 ms
+2026-02-20 13:32:02.860 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDDMStructures took 0 ms
+2026-02-20 13:32:02.864 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateRoles took 3 ms
+2026-02-20 13:32:02.874 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccountGroups took 9 ms
+2026-02-20 13:32:02.875 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateTaxonomyVocabularies took 0 ms
+2026-02-20 13:32:02.878 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addKeywords took 0 ms
+2026-02-20 13:32:02.879 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addSiteConfiguration took 0 ms
+2026-02-20 13:32:02.881 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectFolders took 0 ms
+2026-02-20 13:32:02.883 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addSiteSettings took 0 ms
+2026-02-20 13:32:02.884 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateExpandoColumns took 0 ms
+2026-02-20 13:32:02.886 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addWorkflowDefinitions took 0 ms
+2026-02-20 13:32:02.888 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateSXPBlueprint took 0 ms
+2026-02-20 13:32:02.889 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addPortletSettings took 0 ms
+2026-02-20 13:32:14.095 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDocuments took 11204 ms
+2026-02-20 13:32:14.096 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccounts took 0 ms
+2026-02-20 13:32:14.096 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateOrganizations took 0 ms
+2026-02-20 13:32:16.200 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateLayouts took 2102 ms
+2026-02-20 13:32:16.201 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccountGroupAssignments took 0 ms
+2026-02-20 13:32:16.203 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateKnowledgeBaseArticles took 0 ms
+2026-02-20 13:32:16.204 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateBlogPostings took 0 ms
+2026-02-20 13:32:16.204 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addUserAccounts took 0 ms
+2026-02-20 13:32:16.205 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addFragmentEntries took 0 ms
+2026-02-20 13:32:16.206 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addUserRoles took 0 ms
+2026-02-20 13:32:16.210 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking updateLayoutSets took 4 ms
+2026-02-20 13:32:16.212 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateClientExtensionEntries took 0 ms
+2026-02-20 13:32:16.214 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccountsOrganizations took 0 ms
+2026-02-20 13:32:16.215 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateSegmentsEntries took 0 ms
+2026-02-20 13:32:16.216 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addRolesAssignments took 0 ms
+2026-02-20 13:32:16.217 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateAssetLinkEntries took 0 ms
+2026-02-20 13:32:16.219 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addObjectDefinitions took 2 ms
+2026-02-20 13:32:16.219 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectRelationships took 0 ms
+2026-02-20 13:32:16.220 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectFields took 0 ms
+2026-02-20 13:32:16.221 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking publishObjectDefinitions took 0 ms
+2026-02-20 13:32:16.222 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateNotificationTemplates took 0 ms
+2026-02-20 13:32:16.223 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateAccountEntryRestrictions took 0 ms
+2026-02-20 13:32:16.223 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectActions took 0 ms
+2026-02-20 13:32:16.224 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectEntries took 1 ms
+2026-02-20 13:32:16.249 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDDMTemplates took 24 ms
+2026-02-20 13:32:16.251 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAssetListEntries took 0 ms
+2026-02-20 13:32:16.253 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addCPDefinitions took 0 ms
+2026-02-20 13:32:16.254 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateJournalArticles took 0 ms
+2026-02-20 13:32:20.257 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addLayoutUtilityPageEntries took 4001 ms
+2026-02-20 13:32:20.259 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addLayoutPageTemplates took 0 ms
+2026-02-20 13:32:23.678 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateLayoutsContent took 3419 ms
+2026-02-20 13:32:23.679 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addExpandoValues took 0 ms
+2026-02-20 13:32:23.679 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addSegmentsExperiences took 0 ms
+2026-02-20 13:32:23.680 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateResourcePermissions took 0 ms
+2026-02-20 13:32:23.681 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:546] Initialized com.liferay.site.initializer.welcome for group 20117 in 20839 ms
+2026-02-20 13:34:09.330 INFO  [SystemExecutorServiceUtil-4][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 101
+2026-02-20 13:34:11.242 INFO  [SystemExecutorServiceUtil-4][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 101 in 1896ms
+2026-02-20 13:36:50.814 INFO  [SystemExecutorServiceUtil-2][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 201
+2026-02-20 13:36:52.641 INFO  [SystemExecutorServiceUtil-2][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 201 in 1812ms
+2026-02-20 13:39:12.714 INFO  [SystemExecutorServiceUtil-3][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 301
+2026-02-20 13:39:14.444 INFO  [SystemExecutorServiceUtil-3][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 301 in 1714ms
+2026-02-20 13:41:51.471 INFO  [SystemExecutorServiceUtil-5][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 401
+2026-02-20 13:41:53.557 INFO  [SystemExecutorServiceUtil-5][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 401 in 2069ms
+2026-02-20 13:45:56.509 INFO  [SystemExecutorServiceUtil-9][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 501
+2026-02-20 13:45:58.268 INFO  [SystemExecutorServiceUtil-9][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 501 in 1743ms

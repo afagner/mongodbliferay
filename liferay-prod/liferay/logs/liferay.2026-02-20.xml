@@ -1,0 +1,1210 @@
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1771594199254" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="114"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594203869" level="WARN" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="73"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594203872" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="134"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.dao.init.DBInitUtil" timestamp="1771594203916" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Create tables and populate with default data]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.dao.init.DBInitUtil" method="_createTablesAndPopulate" file="DBInitUtil.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594205336" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1355"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1771594206363" level="INFO" thread="main">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594206652" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1645"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594206664" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1690"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1771594208260" level="WARN" thread="Start Level: Equinox Container: d4a7629c-2392-46b6-a837-ccaed0971f2e">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="70"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594212287" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1713"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594212289" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1720"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594213437" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1774"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594213438" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="283"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1771594214522" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1771594215175" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="152"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1771594217161" level="INFO" thread="SystemExecutorServiceUtil-12">
+<log4j:message><![CDATA[Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.mail.messaging.internal.MailMessageListener" timestamp="1771594231653" level="WARN" thread="liferay/mail-2">
+<log4j:message><![CDATA[Email test@domain.invalid will be ignored because it is included in mail.send.blacklist]]></log4j:message>
+<log4j:locationInfo class="com.liferay.mail.messaging.internal.MailMessageListener" method="filterInternetAddress" file="MailMessageListener.java" line="123"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.mail.messaging.internal.MailMessageListener" timestamp="1771594231654" level="WARN" thread="liferay/mail-3">
+<log4j:message><![CDATA[Email test@domain.invalid will be ignored because it is included in mail.send.blacklist]]></log4j:message>
+<log4j:locationInfo class="com.liferay.mail.messaging.internal.MailMessageListener" method="filterInternetAddress" file="MailMessageListener.java" line="123"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.mail.messaging.internal.MailMessageListener" timestamp="1771594231668" level="WARN" thread="liferay/mail-3">
+<log4j:message><![CDATA[Skipping email because the sender is not specified]]></log4j:message>
+<log4j:locationInfo class="com.liferay.mail.messaging.internal.MailMessageListener" method="doMailMessage" file="MailMessageListener.java" line="49"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.mail.messaging.internal.MailMessageListener" timestamp="1771594231668" level="WARN" thread="liferay/mail-2">
+<log4j:message><![CDATA[Skipping email because the sender is not specified]]></log4j:message>
+<log4j:locationInfo class="com.liferay.mail.messaging.internal.MailMessageListener" method="doMailMessage" file="MailMessageListener.java" line="49"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594233439" level="INFO" thread="main">
+<log4j:message><![CDATA[Verifying com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="65"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594233441" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#verifyDefaultSAPEntry]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="74"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594233464" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#verifyDefaultSAPEntry in 23 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="35"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594233467" level="INFO" thread="main">
+<log4j:message><![CDATA[Completed verification process com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess in 30 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="78"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594233530" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133033499RMQTMMYJ/admin-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594233893" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133033499RMQTMMYJ/admin-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594234081" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Verifying com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="65"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594234084" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Starting com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#verifyCPMeasurementUnits]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="74"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594234299" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#verifyCPMeasurementUnits in 216 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="35"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594234300" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed verification process com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess in 219 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="78"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594234866" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133034862XBWHBHNJ/classic-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594235114" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133034862XBWHBHNJ/classic-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594235676" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133035671LVGATMWX/dialect-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594235910" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133035671LVGATMWX/dialect-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594236470" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133036465WNPDAKWG/minium-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594236750" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133036465WNPDAKWG/minium-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594237141" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Verifying com.liferay.adaptive.media.document.library.thumbnails.internal.verify.DocumentLibraryThumbnailsConfigurationVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="65"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594237152" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed verification process com.liferay.adaptive.media.document.library.thumbnails.internal.verify.DocumentLibraryThumbnailsConfigurationVerifyProcess in 10 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="78"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594237551" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133037544MFBHQKOV/speedwell-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594237823" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133037544MFBHQKOV/speedwell-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594237902" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Verifying com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="65"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594237905" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Starting com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#verifyBasePriceLists]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="74"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594237912" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#verifyBasePriceLists in 7 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="35"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594237913" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed verification process com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess in 11 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="78"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594239094" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Verifying com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="lambda$verify$0" file="VerifyProcess.java" line="65"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594239096" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Starting com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountRoles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="74"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594239106" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountRoles in 9 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="35"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594239108" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Starting com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountGroup]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="&lt;init&gt;" file="LoggingTimer.java" line="74"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.util.LoggingTimer" timestamp="1771594239111" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountGroup in 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.util.LoggingTimer" method="close" file="LoggingTimer.java" line="35"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.verify.VerifyProcess" timestamp="1771594239113" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Completed verification process com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess in 19 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.verify.VerifyProcess" method="verify" file="VerifyProcess.java" line="78"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594239812" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Started batch engine import task 1]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="95"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594240648" level="INFO" thread="SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service">
+<log4j:message><![CDATA[Finished batch engine import task 1 in 835ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322841" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Initializing com.liferay.site.initializer.welcome for group 20117]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="initialize" file="BundleSiteInitializer.java" line="528"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322848" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateDepotEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322849" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking setPLOEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322850" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateSAPEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322852" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateUserGroups took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322853" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateListTypeDefinitions took 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322857" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateDataDefinitions took 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322859" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addStyleBookEntries took 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322860" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateDDMStructures took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322864" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateRoles took 3 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322874" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addAccountGroups took 9 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322875" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateTaxonomyVocabularies took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322878" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addKeywords took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322879" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addSiteConfiguration took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322881" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateObjectFolders took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322883" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addSiteSettings took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322884" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateExpandoColumns took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322886" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addWorkflowDefinitions took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322888" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateSXPBlueprint took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594322889" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addPortletSettings took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594334095" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateDocuments took 11204 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594334096" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addAccounts took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594334096" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateOrganizations took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336200" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateLayouts took 2102 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336201" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addAccountGroupAssignments took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336203" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateKnowledgeBaseArticles took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336204" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateBlogPostings took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336204" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addUserAccounts took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336205" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addFragmentEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336206" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addUserRoles took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336210" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking updateLayoutSets took 4 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336212" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateClientExtensionEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336214" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addAccountsOrganizations took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336215" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateSegmentsEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336216" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addRolesAssignments took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336217" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateAssetLinkEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336219" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addObjectDefinitions took 2 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336219" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateObjectRelationships took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336220" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateObjectFields took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336221" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking publishObjectDefinitions took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336222" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateNotificationTemplates took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336223" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateAccountEntryRestrictions took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336223" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateObjectActions took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336224" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateObjectEntries took 1 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336249" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateDDMTemplates took 24 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336251" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addAssetListEntries took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336253" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addCPDefinitions took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594336254" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateJournalArticles took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594340257" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addLayoutUtilityPageEntries took 4001 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594340259" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addLayoutPageTemplates took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594343678" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateLayoutsContent took 3419 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594343679" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addExpandoValues took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594343679" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addSegmentsExperiences took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594343680" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Invoking addOrUpdateResourcePermissions took 0 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="_initialize" file="BundleSiteInitializer.java" line="5600"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" timestamp="1771594343681" level="INFO" thread="http-nio-8080-exec-3">
+<log4j:message><![CDATA[Initialized com.liferay.site.initializer.welcome for group 20117 in 20839 ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.site.initializer.extender.internal.BundleSiteInitializer" method="initialize" file="BundleSiteInitializer.java" line="546"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1771594420622" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="114"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594426722" level="WARN" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="73"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594426723" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="134"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594427932" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1355"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1771594428903" level="INFO" thread="main">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594429116" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1645"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594429118" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1690"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1771594430587" level="WARN" thread="Start Level: Equinox Container: c1ffb4b6-f9bb-44e1-8057-81558c97e937">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="70"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594434140" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1713"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594434142" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1720"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594435430" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1774"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594435432" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="283"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1771594436051" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1771594436536" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="152"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1771594439976" level="INFO" thread="SystemExecutorServiceUtil-29">
+<log4j:message><![CDATA[Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594445581" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133405517FFYSGLQJ/admin-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594446001" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133405517FFYSGLQJ/admin-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594447265" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133407256ONAZQREZ/classic-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594447634" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133407256ONAZQREZ/classic-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594448583" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133408576HMHIOAEH/dialect-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594448904" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133408576HMHIOAEH/dialect-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594449330" level="INFO" thread="SystemExecutorServiceUtil-4">
+<log4j:message><![CDATA[Started batch engine import task 101]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="95"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594449539" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133409525WCCORORK/minium-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594449819" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133409525WCCORORK/minium-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594450636" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133410628HLSIEQTK/speedwell-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594450898" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133410628HLSIEQTK/speedwell-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594451242" level="INFO" thread="SystemExecutorServiceUtil-4">
+<log4j:message><![CDATA[Finished batch engine import task 101 in 1896ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1771594583381" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="114"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594589937" level="WARN" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="73"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594589939" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="134"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594591232" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1355"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1771594592313" level="INFO" thread="main">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594592528" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1645"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594592530" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1690"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1771594593988" level="WARN" thread="Start Level: Equinox Container: 9709a34c-73e6-4105-bfc6-36f5cc02902d">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="70"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594597386" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1713"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594597388" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1720"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594598512" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1774"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594598513" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="283"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1771594599121" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1771594599591" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="152"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1771594602632" level="INFO" thread="SystemExecutorServiceUtil-32">
+<log4j:message><![CDATA[Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594608647" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133648585OYYPQXPE/admin-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594609110" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133648585OYYPQXPE/admin-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594610379" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133650374BVCKEUDR/classic-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594610637" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133650374BVCKEUDR/classic-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594610814" level="INFO" thread="SystemExecutorServiceUtil-2">
+<log4j:message><![CDATA[Started batch engine import task 201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="95"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594611219" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133651214RIGPNGOK/dialect-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594611499" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133651214RIGPNGOK/dialect-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594612087" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133652080ZPEHSWQW/minium-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594612462" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133652080ZPEHSWQW/minium-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594612641" level="INFO" thread="SystemExecutorServiceUtil-2">
+<log4j:message><![CDATA[Finished batch engine import task 201 in 1812ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594613302" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133653297OKMHVIED/speedwell-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594613597" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133653297OKMHVIED/speedwell-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1771594726550" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="114"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594732723" level="WARN" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="73"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594732726" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="134"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594734003" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1355"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1771594735054" level="INFO" thread="main">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594735337" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1645"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594735340" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1690"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1771594736865" level="WARN" thread="Start Level: Equinox Container: 48f9444d-3a29-474c-9bd0-80960fe14d0d">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="70"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594740075" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1713"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594740077" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1720"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594741104" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1774"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594741105" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="283"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1771594741604" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1771594742025" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="152"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1771594744759" level="INFO" thread="SystemExecutorServiceUtil-21">
+<log4j:message><![CDATA[Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594751224" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133911150EBATFALS/admin-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594751785" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133911150EBATFALS/admin-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594752714" level="INFO" thread="SystemExecutorServiceUtil-3">
+<log4j:message><![CDATA[Started batch engine import task 301]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="95"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594752861" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133912855GPEKIVXH/classic-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594753108" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133912855GPEKIVXH/classic-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594753758" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133913752LRVJYNUT/dialect-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594753986" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133913752LRVJYNUT/dialect-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594754444" level="INFO" thread="SystemExecutorServiceUtil-3">
+<log4j:message><![CDATA[Finished batch engine import task 301 in 1714ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594754727" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133914637CCCDKAFZ/minium-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594755187" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133914637CCCDKAFZ/minium-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594756069" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220133916062XXORWUUO/speedwell-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594756402" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220133916062XXORWUUO/speedwell-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1771594884028" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="114"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594889974" level="WARN" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="73"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771594889976" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="134"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594891112" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1355"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1771594892133" level="INFO" thread="main">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594892405" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1645"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594892407" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1690"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1771594893856" level="WARN" thread="Start Level: Equinox Container: 7f2ff043-0009-4bfc-8000-72569cc18f8c">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="70"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594897489" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1713"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594897490" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1720"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594898703" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1774"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771594898704" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="283"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1771594899290" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1771594899776" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="152"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1771594903394" level="INFO" thread="SystemExecutorServiceUtil-26">
+<log4j:message><![CDATA[Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594908785" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134148747BNOSBNZE/admin-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594909123" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134148747BNOSBNZE/admin-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594910521" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134150515DDADXLKL/classic-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594910830" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134150515DDADXLKL/classic-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594911450" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134151445VYWRMWGG/dialect-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594911471" level="INFO" thread="SystemExecutorServiceUtil-5">
+<log4j:message><![CDATA[Started batch engine import task 401]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="95"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594911709" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134151445VYWRMWGG/dialect-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594912339" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134152332KXCTXVFI/minium-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594912639" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134152332KXCTXVFI/minium-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594913483" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134153476FQWRMLJY/speedwell-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771594913557" level="INFO" thread="SystemExecutorServiceUtil-5">
+<log4j:message><![CDATA[Finished batch engine import task 401 in 2069ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771594913840" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134153476FQWRMLJY/speedwell-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.context.PortalContextLoaderListener" timestamp="1771595129002" level="INFO" thread="main">
+<log4j:message><![CDATA[JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.log.LogWrapper" method="info" file="LogWrapper.java" line="114"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771595135282" level="WARN" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="73"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.spring.hibernate.DialectDetector" timestamp="1771595135285" level="INFO" thread="SystemExecutorServiceUtil-1">
+<log4j:message><![CDATA[Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.spring.hibernate.DialectDetector" method="getDialect" file="DialectDetector.java" line="134"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595136418" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1355"/>
+</log4j:event>
+
+<log4j:event logger="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" timestamp="1771595137336" level="INFO" thread="main">
+<log4j:message><![CDATA[Configured directory for secrets: /opt/liferay/osgi/configs]]></log4j:message>
+<log4j:locationInfo class="org.apache.felix.configadmin.plugin.interpolation.InterpolationConfigurationPlugin" method="&lt;init&gt;" file="InterpolationConfigurationPlugin.java" line="109"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595137546" level="INFO" thread="main">
+<log4j:message><![CDATA[Started initial bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_setUpInitialBundles" file="ModuleFrameworkImpl.java" line="1645"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595137548" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1690"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" timestamp="1771595138994" level="WARN" thread="Start Level: Equinox Container: 1ed2d6bc-59f0-48bf-a98f-9f6f46c1db72">
+<log4j:message><![CDATA[Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.SidecarManager" method="applyConfigurations" file="SidecarManager.java" line="70"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595142727" level="INFO" thread="main">
+<log4j:message><![CDATA[Started dynamic bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1713"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595142729" level="INFO" thread="main">
+<log4j:message><![CDATA[Starting web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1720"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595143950" level="INFO" thread="main">
+<log4j:message><![CDATA[Started web bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="_startDynamicBundles" file="ModuleFrameworkImpl.java" line="1774"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.bootstrap.ModuleFrameworkImpl" timestamp="1771595143957" level="INFO" thread="main">
+<log4j:message><![CDATA[Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.bootstrap.ModuleFrameworkImpl" method="startFramework" file="ModuleFrameworkImpl.java" line="283"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.events.StartupHelperUtil" timestamp="1771595144521" level="INFO" thread="main">
+<log4j:message><![CDATA[There are no patches installed]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.events.StartupHelperUtil" method="printPatchLevel" file="StartupHelperUtil.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" timestamp="1771595145003" level="INFO" thread="main">
+<log4j:message><![CDATA[Auto deploy scanner started for /opt/liferay/deploy]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.AutoDeployDir" method="start" file="AutoDeployDir.java" line="152"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" timestamp="1771595148255" level="INFO" thread="SystemExecutorServiceUtil-32">
+<log4j:message><![CDATA[Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.search.elasticsearch7.internal.sidecar.Sidecar" method="start" file="Sidecar.java" line="100"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595154039" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134553999VVKYAWET/admin-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595154454" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134553999VVKYAWET/admin-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595155874" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134555868JNDILCYQ/classic-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595156163" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134555868JNDILCYQ/classic-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771595156509" level="INFO" thread="SystemExecutorServiceUtil-9">
+<log4j:message><![CDATA[Started batch engine import task 501]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="95"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595156781" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134556777VPHYJHRC/dialect-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595157038" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134556777VPHYJHRC/dialect-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595157666" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134557660GACTUQJY/minium-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595158040" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134557660GACTUQJY/minium-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" timestamp="1771595158268" level="INFO" thread="SystemExecutorServiceUtil-9">
+<log4j:message><![CDATA[Finished batch engine import task 501 in 1743ms]]></log4j:message>
+<log4j:locationInfo class="com.liferay.batch.engine.internal.BatchEngineImportTaskExecutorImpl" method="execute" file="BatchEngineImportTaskExecutorImpl.java" line="176"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595158824" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Copying themes for /opt/liferay/tomcat/temp/20260220134558819ZXPZLRCE/speedwell-theme.war]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="34"/>
+</log4j:event>
+
+<log4j:event logger="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" timestamp="1771595159079" level="INFO" thread="fileinstall-directory-watcher">
+<log4j:message><![CDATA[Themes for /opt/liferay/tomcat/temp/20260220134558819ZXPZLRCE/speedwell-theme.war copied successfully]]></log4j:message>
+<log4j:locationInfo class="com.liferay.portal.kernel.deploy.auto.BaseAutoDeployListener" method="deploy" file="BaseAutoDeployListener.java" line="41"/>
+</log4j:event>
+

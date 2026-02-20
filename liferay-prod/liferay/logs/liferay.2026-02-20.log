@@ -1,0 +1,242 @@
+2026-02-20 13:29:59.254 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-02-20 13:30:03.869 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2026-02-20 13:30:03.872 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2026-02-20 13:30:03.916 INFO  [SystemExecutorServiceUtil-1][DBInitUtil:109] Create tables and populate with default data
+2026-02-20 13:30:05.336 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-02-20 13:30:06.363 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-02-20 13:30:06.652 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-02-20 13:30:06.664 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-02-20 13:30:08.260 WARN  [Start Level: Equinox Container: d4a7629c-2392-46b6-a837-ccaed0971f2e][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-02-20 13:30:12.287 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-02-20 13:30:12.289 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-02-20 13:30:13.437 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-02-20 13:30:13.438 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-02-20 13:30:14.522 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2026-02-20 13:30:15.175 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-02-20 13:30:17.161 INFO  [SystemExecutorServiceUtil-12][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2026-02-20 13:30:31.653 WARN  [liferay/mail-2][MailMessageListener:123] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-02-20 13:30:31.654 WARN  [liferay/mail-3][MailMessageListener:123] Email test@domain.invalid will be ignored because it is included in mail.send.blacklist
+2026-02-20 13:30:31.668 WARN  [liferay/mail-3][MailMessageListener:49] Skipping email because the sender is not specified
+2026-02-20 13:30:31.668 WARN  [liferay/mail-2][MailMessageListener:49] Skipping email because the sender is not specified
+2026-02-20 13:30:33.439 INFO  [main][VerifyProcess:65] Verifying com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess
+2026-02-20 13:30:33.441 INFO  [main][LoggingTimer:74] Starting com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#verifyDefaultSAPEntry
+2026-02-20 13:30:33.464 INFO  [main][LoggingTimer:35] Completed com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess#verifyDefaultSAPEntry in 23 ms
+2026-02-20 13:30:33.467 INFO  [main][VerifyProcess:78] Completed verification process com.liferay.portal.security.service.access.policy.internal.verify.SAPServiceVerifyProcess in 30 ms
+2026-02-20 13:30:33.530 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133033499RMQTMMYJ/admin-theme.war
+2026-02-20 13:30:33.893 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133033499RMQTMMYJ/admin-theme.war copied successfully
+2026-02-20 13:30:34.081 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess
+2026-02-20 13:30:34.084 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#verifyCPMeasurementUnits
+2026-02-20 13:30:34.299 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess#verifyCPMeasurementUnits in 216 ms
+2026-02-20 13:30:34.300 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.commerce.product.internal.verify.CommerceProductServiceVerifyProcess in 219 ms
+2026-02-20 13:30:34.866 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133034862XBWHBHNJ/classic-theme.war
+2026-02-20 13:30:35.114 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133034862XBWHBHNJ/classic-theme.war copied successfully
+2026-02-20 13:30:35.676 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133035671LVGATMWX/dialect-theme.war
+2026-02-20 13:30:35.910 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133035671LVGATMWX/dialect-theme.war copied successfully
+2026-02-20 13:30:36.470 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133036465WNPDAKWG/minium-theme.war
+2026-02-20 13:30:36.750 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133036465WNPDAKWG/minium-theme.war copied successfully
+2026-02-20 13:30:37.141 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.adaptive.media.document.library.thumbnails.internal.verify.DocumentLibraryThumbnailsConfigurationVerifyProcess
+2026-02-20 13:30:37.152 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.adaptive.media.document.library.thumbnails.internal.verify.DocumentLibraryThumbnailsConfigurationVerifyProcess in 10 ms
+2026-02-20 13:30:37.551 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133037544MFBHQKOV/speedwell-theme.war
+2026-02-20 13:30:37.823 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133037544MFBHQKOV/speedwell-theme.war copied successfully
+2026-02-20 13:30:37.902 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess
+2026-02-20 13:30:37.905 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#verifyBasePriceLists
+2026-02-20 13:30:37.912 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess#verifyBasePriceLists in 7 ms
+2026-02-20 13:30:37.913 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.commerce.price.list.internal.verify.CommercePriceListServiceVerifyProcess in 11 ms
+2026-02-20 13:30:39.094 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:65] Verifying com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess
+2026-02-20 13:30:39.096 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountRoles
+2026-02-20 13:30:39.106 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountRoles in 9 ms
+2026-02-20 13:30:39.108 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:74] Starting com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountGroup
+2026-02-20 13:30:39.111 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][LoggingTimer:35] Completed com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess#verifyAccountGroup in 2 ms
+2026-02-20 13:30:39.113 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][VerifyProcess:78] Completed verification process com.liferay.commerce.internal.verify.CommerceAccountServiceVerifyProcess in 19 ms
+2026-02-20 13:30:39.812 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 1
+2026-02-20 13:30:40.648 INFO  [SystemExecutorServiceUtil-4-com.liferay.portal.spring.extender.internal.configuration.ServiceConfigurationInitializer-com.liferay.change.tracking.service][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 1 in 835ms
+2026-02-20 13:32:02.841 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:528] Initializing com.liferay.site.initializer.welcome for group 20117
+2026-02-20 13:32:02.848 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDepotEntries took 0 ms
+2026-02-20 13:32:02.849 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking setPLOEntries took 0 ms
+2026-02-20 13:32:02.850 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateSAPEntries took 0 ms
+2026-02-20 13:32:02.852 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateUserGroups took 0 ms
+2026-02-20 13:32:02.853 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateListTypeDefinitions took 1 ms
+2026-02-20 13:32:02.857 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDataDefinitions took 3 ms
+2026-02-20 13:32:02.859 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addStyleBookEntries took 1 ms
+2026-02-20 13:32:02.860 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDDMStructures took 0 ms
+2026-02-20 13:32:02.864 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateRoles took 3 ms
+2026-02-20 13:32:02.874 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccountGroups took 9 ms
+2026-02-20 13:32:02.875 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateTaxonomyVocabularies took 0 ms
+2026-02-20 13:32:02.878 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addKeywords took 0 ms
+2026-02-20 13:32:02.879 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addSiteConfiguration took 0 ms
+2026-02-20 13:32:02.881 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectFolders took 0 ms
+2026-02-20 13:32:02.883 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addSiteSettings took 0 ms
+2026-02-20 13:32:02.884 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateExpandoColumns took 0 ms
+2026-02-20 13:32:02.886 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addWorkflowDefinitions took 0 ms
+2026-02-20 13:32:02.888 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateSXPBlueprint took 0 ms
+2026-02-20 13:32:02.889 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addPortletSettings took 0 ms
+2026-02-20 13:32:14.095 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDocuments took 11204 ms
+2026-02-20 13:32:14.096 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccounts took 0 ms
+2026-02-20 13:32:14.096 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateOrganizations took 0 ms
+2026-02-20 13:32:16.200 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateLayouts took 2102 ms
+2026-02-20 13:32:16.201 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccountGroupAssignments took 0 ms
+2026-02-20 13:32:16.203 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateKnowledgeBaseArticles took 0 ms
+2026-02-20 13:32:16.204 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateBlogPostings took 0 ms
+2026-02-20 13:32:16.204 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addUserAccounts took 0 ms
+2026-02-20 13:32:16.205 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addFragmentEntries took 0 ms
+2026-02-20 13:32:16.206 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addUserRoles took 0 ms
+2026-02-20 13:32:16.210 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking updateLayoutSets took 4 ms
+2026-02-20 13:32:16.212 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateClientExtensionEntries took 0 ms
+2026-02-20 13:32:16.214 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAccountsOrganizations took 0 ms
+2026-02-20 13:32:16.215 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateSegmentsEntries took 0 ms
+2026-02-20 13:32:16.216 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addRolesAssignments took 0 ms
+2026-02-20 13:32:16.217 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateAssetLinkEntries took 0 ms
+2026-02-20 13:32:16.219 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addObjectDefinitions took 2 ms
+2026-02-20 13:32:16.219 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectRelationships took 0 ms
+2026-02-20 13:32:16.220 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectFields took 0 ms
+2026-02-20 13:32:16.221 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking publishObjectDefinitions took 0 ms
+2026-02-20 13:32:16.222 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateNotificationTemplates took 0 ms
+2026-02-20 13:32:16.223 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateAccountEntryRestrictions took 0 ms
+2026-02-20 13:32:16.223 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectActions took 0 ms
+2026-02-20 13:32:16.224 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateObjectEntries took 1 ms
+2026-02-20 13:32:16.249 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateDDMTemplates took 24 ms
+2026-02-20 13:32:16.251 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addAssetListEntries took 0 ms
+2026-02-20 13:32:16.253 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addCPDefinitions took 0 ms
+2026-02-20 13:32:16.254 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateJournalArticles took 0 ms
+2026-02-20 13:32:20.257 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addLayoutUtilityPageEntries took 4001 ms
+2026-02-20 13:32:20.259 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addLayoutPageTemplates took 0 ms
+2026-02-20 13:32:23.678 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateLayoutsContent took 3419 ms
+2026-02-20 13:32:23.679 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addExpandoValues took 0 ms
+2026-02-20 13:32:23.679 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addSegmentsExperiences took 0 ms
+2026-02-20 13:32:23.680 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:5600] Invoking addOrUpdateResourcePermissions took 0 ms
+2026-02-20 13:32:23.681 INFO  [http-nio-8080-exec-3][BundleSiteInitializer:546] Initialized com.liferay.site.initializer.welcome for group 20117 in 20839 ms
+2026-02-20 13:33:40.622 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-02-20 13:33:46.722 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2026-02-20 13:33:46.723 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2026-02-20 13:33:47.932 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-02-20 13:33:48.903 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-02-20 13:33:49.116 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-02-20 13:33:49.118 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-02-20 13:33:50.587 WARN  [Start Level: Equinox Container: c1ffb4b6-f9bb-44e1-8057-81558c97e937][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-02-20 13:33:54.140 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-02-20 13:33:54.142 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-02-20 13:33:55.430 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-02-20 13:33:55.432 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-02-20 13:33:56.051 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2026-02-20 13:33:56.536 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-02-20 13:33:59.976 INFO  [SystemExecutorServiceUtil-29][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2026-02-20 13:34:05.581 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133405517FFYSGLQJ/admin-theme.war
+2026-02-20 13:34:06.001 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133405517FFYSGLQJ/admin-theme.war copied successfully
+2026-02-20 13:34:07.265 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133407256ONAZQREZ/classic-theme.war
+2026-02-20 13:34:07.634 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133407256ONAZQREZ/classic-theme.war copied successfully
+2026-02-20 13:34:08.583 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133408576HMHIOAEH/dialect-theme.war
+2026-02-20 13:34:08.904 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133408576HMHIOAEH/dialect-theme.war copied successfully
+2026-02-20 13:34:09.330 INFO  [SystemExecutorServiceUtil-4][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 101
+2026-02-20 13:34:09.539 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133409525WCCORORK/minium-theme.war
+2026-02-20 13:34:09.819 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133409525WCCORORK/minium-theme.war copied successfully
+2026-02-20 13:34:10.636 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133410628HLSIEQTK/speedwell-theme.war
+2026-02-20 13:34:10.898 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133410628HLSIEQTK/speedwell-theme.war copied successfully
+2026-02-20 13:34:11.242 INFO  [SystemExecutorServiceUtil-4][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 101 in 1896ms
+2026-02-20 13:36:23.381 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-02-20 13:36:29.937 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2026-02-20 13:36:29.939 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2026-02-20 13:36:31.232 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-02-20 13:36:32.313 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-02-20 13:36:32.528 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-02-20 13:36:32.530 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-02-20 13:36:33.988 WARN  [Start Level: Equinox Container: 9709a34c-73e6-4105-bfc6-36f5cc02902d][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-02-20 13:36:37.386 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-02-20 13:36:37.388 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-02-20 13:36:38.512 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-02-20 13:36:38.513 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-02-20 13:36:39.121 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2026-02-20 13:36:39.591 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-02-20 13:36:42.632 INFO  [SystemExecutorServiceUtil-32][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2026-02-20 13:36:48.647 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133648585OYYPQXPE/admin-theme.war
+2026-02-20 13:36:49.110 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133648585OYYPQXPE/admin-theme.war copied successfully
+2026-02-20 13:36:50.379 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133650374BVCKEUDR/classic-theme.war
+2026-02-20 13:36:50.637 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133650374BVCKEUDR/classic-theme.war copied successfully
+2026-02-20 13:36:50.814 INFO  [SystemExecutorServiceUtil-2][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 201
+2026-02-20 13:36:51.219 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133651214RIGPNGOK/dialect-theme.war
+2026-02-20 13:36:51.499 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133651214RIGPNGOK/dialect-theme.war copied successfully
+2026-02-20 13:36:52.087 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133652080ZPEHSWQW/minium-theme.war
+2026-02-20 13:36:52.462 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133652080ZPEHSWQW/minium-theme.war copied successfully
+2026-02-20 13:36:52.641 INFO  [SystemExecutorServiceUtil-2][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 201 in 1812ms
+2026-02-20 13:36:53.302 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133653297OKMHVIED/speedwell-theme.war
+2026-02-20 13:36:53.597 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133653297OKMHVIED/speedwell-theme.war copied successfully
+2026-02-20 13:38:46.550 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-02-20 13:38:52.723 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2026-02-20 13:38:52.726 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2026-02-20 13:38:54.003 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-02-20 13:38:55.054 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-02-20 13:38:55.337 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-02-20 13:38:55.340 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-02-20 13:38:56.865 WARN  [Start Level: Equinox Container: 48f9444d-3a29-474c-9bd0-80960fe14d0d][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-02-20 13:39:00.075 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-02-20 13:39:00.077 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-02-20 13:39:01.104 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-02-20 13:39:01.105 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-02-20 13:39:01.604 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2026-02-20 13:39:02.025 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-02-20 13:39:04.759 INFO  [SystemExecutorServiceUtil-21][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2026-02-20 13:39:11.224 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133911150EBATFALS/admin-theme.war
+2026-02-20 13:39:11.785 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133911150EBATFALS/admin-theme.war copied successfully
+2026-02-20 13:39:12.714 INFO  [SystemExecutorServiceUtil-3][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 301
+2026-02-20 13:39:12.861 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133912855GPEKIVXH/classic-theme.war
+2026-02-20 13:39:13.108 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133912855GPEKIVXH/classic-theme.war copied successfully
+2026-02-20 13:39:13.758 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133913752LRVJYNUT/dialect-theme.war
+2026-02-20 13:39:13.986 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133913752LRVJYNUT/dialect-theme.war copied successfully
+2026-02-20 13:39:14.444 INFO  [SystemExecutorServiceUtil-3][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 301 in 1714ms
+2026-02-20 13:39:14.727 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133914637CCCDKAFZ/minium-theme.war
+2026-02-20 13:39:15.187 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133914637CCCDKAFZ/minium-theme.war copied successfully
+2026-02-20 13:39:16.069 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220133916062XXORWUUO/speedwell-theme.war
+2026-02-20 13:39:16.402 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220133916062XXORWUUO/speedwell-theme.war copied successfully
+2026-02-20 13:41:24.028 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-02-20 13:41:29.974 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2026-02-20 13:41:29.976 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2026-02-20 13:41:31.112 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-02-20 13:41:32.133 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-02-20 13:41:32.405 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-02-20 13:41:32.407 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-02-20 13:41:33.856 WARN  [Start Level: Equinox Container: 7f2ff043-0009-4bfc-8000-72569cc18f8c][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-02-20 13:41:37.489 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-02-20 13:41:37.490 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-02-20 13:41:38.703 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-02-20 13:41:38.704 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-02-20 13:41:39.290 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2026-02-20 13:41:39.776 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-02-20 13:41:43.394 INFO  [SystemExecutorServiceUtil-26][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2026-02-20 13:41:48.785 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134148747BNOSBNZE/admin-theme.war
+2026-02-20 13:41:49.123 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134148747BNOSBNZE/admin-theme.war copied successfully
+2026-02-20 13:41:50.521 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134150515DDADXLKL/classic-theme.war
+2026-02-20 13:41:50.830 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134150515DDADXLKL/classic-theme.war copied successfully
+2026-02-20 13:41:51.450 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134151445VYWRMWGG/dialect-theme.war
+2026-02-20 13:41:51.471 INFO  [SystemExecutorServiceUtil-5][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 401
+2026-02-20 13:41:51.709 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134151445VYWRMWGG/dialect-theme.war copied successfully
+2026-02-20 13:41:52.339 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134152332KXCTXVFI/minium-theme.war
+2026-02-20 13:41:52.639 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134152332KXCTXVFI/minium-theme.war copied successfully
+2026-02-20 13:41:53.483 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134153476FQWRMLJY/speedwell-theme.war
+2026-02-20 13:41:53.557 INFO  [SystemExecutorServiceUtil-5][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 401 in 2069ms
+2026-02-20 13:41:53.840 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134153476FQWRMLJY/speedwell-theme.war copied successfully
+2026-02-20 13:45:29.002 INFO  [main][PortalContextLoaderListener:114] JVM arguments: --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.http=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.https=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=jdk.zipfs/jdk.nio.zipfs=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Djava.util.logging.config.file=/opt/liferay/tomcat/conf/logging.properties -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager -Djdk.tls.ephemeralDHKeySize=2048 -Djava.protocol.handler.pkgs=org.apache.catalina.webresources -Dsun.io.useCanonCaches=false -Dorg.apache.catalina.security.SecurityListener.UMASK=0027 -Dfile.encoding=UTF-8 -Djava.net.preferIPv4Stack=true -Duser.timezone=GMT -Xms2560m -Xmx2560m -XX:MaxNewSize=1536m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m -XX:NewSize=1536m -XX:SurvivorRatio=7 -Dignore.endorsed.dirs= -Dcatalina.base=/opt/liferay/tomcat -Dcatalina.home=/opt/liferay/tomcat -Djava.io.tmpdir=/opt/liferay/tomcat/temp
+2026-02-20 13:45:35.282 WARN  [SystemExecutorServiceUtil-1][DialectDetector:73] Liferay is configured to use Hypersonic as its database. Do NOT use Hypersonic in production. Hypersonic is an embedded database useful for development and demonstration purposes. The database settings can be changed in portal-ext.properties.
+2026-02-20 13:45:35.285 INFO  [SystemExecutorServiceUtil-1][DialectDetector:134] Using dialect com.liferay.portal.dao.orm.hibernate.HSQLDialect for HSQL Database Engine 2.7
+2026-02-20 13:45:36.418 INFO  [main][ModuleFrameworkImpl:1355] Starting initial bundles
+2026-02-20 13:45:37.336 INFO  [main][InterpolationConfigurationPlugin:109] Configured directory for secrets: /opt/liferay/osgi/configs
+2026-02-20 13:45:37.546 INFO  [main][ModuleFrameworkImpl:1645] Started initial bundles
+2026-02-20 13:45:37.548 INFO  [main][ModuleFrameworkImpl:1690] Starting dynamic bundles
+2026-02-20 13:45:38.994 WARN  [Start Level: Equinox Container: 1ed2d6bc-59f0-48bf-a98f-9f6f46c1db72][SidecarManager:70] Liferay automatically starts a child process of Elasticsearch named sidecar for convenient development and demonstration purposes. Do NOT use sidecar in production. Refer to the documentation for details on the limitations of sidecar and instructions on configuring a remote Elasticsearch connection in the Control Panel.
+2026-02-20 13:45:42.727 INFO  [main][ModuleFrameworkImpl:1713] Started dynamic bundles
+2026-02-20 13:45:42.729 INFO  [main][ModuleFrameworkImpl:1720] Starting web bundles
+2026-02-20 13:45:43.950 INFO  [main][ModuleFrameworkImpl:1774] Started web bundles
+2026-02-20 13:45:43.957 INFO  [main][ModuleFrameworkImpl:283] Navigate to Control Panel > System > Gogo Shell and enter "lb" to see all bundles
+2026-02-20 13:45:44.521 INFO  [main][StartupHelperUtil:100] There are no patches installed
+2026-02-20 13:45:45.003 INFO  [main][AutoDeployDir:152] Auto deploy scanner started for /opt/liferay/deploy
+2026-02-20 13:45:48.255 INFO  [SystemExecutorServiceUtil-32][Sidecar:100] Sidecar Elasticsearch 7.17.26 liferay_sidecar started at 127.0.0.1:9201
+2026-02-20 13:45:54.039 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134553999VVKYAWET/admin-theme.war
+2026-02-20 13:45:54.454 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134553999VVKYAWET/admin-theme.war copied successfully
+2026-02-20 13:45:55.874 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134555868JNDILCYQ/classic-theme.war
+2026-02-20 13:45:56.163 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134555868JNDILCYQ/classic-theme.war copied successfully
+2026-02-20 13:45:56.509 INFO  [SystemExecutorServiceUtil-9][BatchEngineImportTaskExecutorImpl:95] Started batch engine import task 501
+2026-02-20 13:45:56.781 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134556777VPHYJHRC/dialect-theme.war
+2026-02-20 13:45:57.038 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134556777VPHYJHRC/dialect-theme.war copied successfully
+2026-02-20 13:45:57.666 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134557660GACTUQJY/minium-theme.war
+2026-02-20 13:45:58.040 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134557660GACTUQJY/minium-theme.war copied successfully
+2026-02-20 13:45:58.268 INFO  [SystemExecutorServiceUtil-9][BatchEngineImportTaskExecutorImpl:176] Finished batch engine import task 501 in 1743ms
+2026-02-20 13:45:58.824 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:34] Copying themes for /opt/liferay/tomcat/temp/20260220134558819ZXPZLRCE/speedwell-theme.war
+2026-02-20 13:45:59.079 INFO  [fileinstall-directory-watcher][BaseAutoDeployListener:41] Themes for /opt/liferay/tomcat/temp/20260220134558819ZXPZLRCE/speedwell-theme.war copied successfully
