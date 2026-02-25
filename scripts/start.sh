@@ -14,13 +14,13 @@ fi
 POD_NAME=liferay-prod
 NET_NAME=liferay-prod-net
 
-echo "[1/5] Criando network..."
+echo "[1/6] Criando network..."
 podman network create "$NET_NAME" 2>/dev/null || true
 
-echo "[2/5] Criando pod..."
+echo "[2/6] Criando pod..."
 podman pod create --name "$POD_NAME" --network "$NET_NAME" -p 8080:80
 
-echo "[3/5] Criando containers..."
+echo "[3/6] Criando containers..."
 podman create --pod "$POD_NAME" --name mongodb \
   --restart=always \
   -v "$VOLUME_ROOT/mongodb/data:/data/db" \
@@ -28,6 +28,16 @@ podman create --pod "$POD_NAME" --name mongodb \
   -e MONGO_INITDB_ROOT_USERNAME=root \
   -e MONGO_INITDB_ROOT_PASSWORD=rootProd@123 \
   mongo:7
+
+podman create --pod "$POD_NAME" --name mysql \
+  --restart=always \
+  -v "$VOLUME_ROOT/mysql/data:/var/lib/mysql" \
+  -v "$VOLUME_ROOT/mysql/init:/docker-entrypoint-initdb.d:ro" \
+  -e MYSQL_ROOT_PASSWORD=rootProd@123 \
+  -e MYSQL_DATABASE=lportal \
+  -e MYSQL_USER=liferay \
+  -e MYSQL_PASSWORD=liferayProd@123 \
+  mysql:8.0
 
 podman create --pod "$POD_NAME" --name elasticsearch \
   --restart=always \
@@ -50,16 +60,18 @@ podman create --pod "$POD_NAME" --name nginx \
   -v "$VOLUME_ROOT/nginx/conf.d:/etc/nginx/conf.d:ro" \
   nginx:alpine
 
-echo "[4/5] Iniciando containers (ordem: mongodb, elasticsearch, liferay, nginx)..."
+echo "[4/6] Iniciando containers (ordem: mongodb, mysql, elasticsearch, liferay, nginx)..."
 podman start mongodb
 sleep 5
+podman start mysql
+sleep 10
 podman start elasticsearch
 sleep 5
 podman start liferay
 sleep 15
 podman start nginx
 
-echo "[5/5] Concluído."
+echo "[6/6] Concluído."
 echo "  Pod: $POD_NAME"
 echo "  Acesso: http://localhost:8080"
 echo ""

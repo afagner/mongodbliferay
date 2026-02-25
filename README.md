@@ -1,6 +1,6 @@
 # Liferay Prod – Ambiente Podman
 
-Ambiente de produção com Liferay Portal, MongoDB, Elasticsearch e NGINX em um pod Podman.
+Ambiente de produção com Liferay Portal, MySQL, MongoDB, Elasticsearch e NGINX em um pod Podman.
 
 **Desenvolvido por Alexandre Fagner – Smanager**
 
@@ -29,7 +29,7 @@ Ambiente de produção com Liferay Portal, MongoDB, Elasticsearch e NGINX em um 
    bash scripts/start.sh
    ```
 
-3. Aguarde a subida dos containers (MongoDB → Elasticsearch → Liferay → NGINX). **O Liferay leva 1 a 3 minutos para iniciar.** Só abra a URL depois desse tempo; se a página aparecer sem formatação (sem CSS), aguarde mais e recarregue (F5).
+3. Aguarde a subida dos containers (MongoDB → MySQL → Elasticsearch → Liferay → NGINX). **O Liferay leva 1 a 3 minutos para iniciar.** Só abra a URL depois desse tempo; se a página aparecer sem formatação (sem CSS), aguarde mais e recarregue (F5).
 
 4. Acesse:
 
@@ -50,6 +50,7 @@ Ambiente de produção com Liferay Portal, MongoDB, Elasticsearch e NGINX em um 
 | Componente     | Imagem / versão |
 |----------------|------------------|
 | Liferay Portal | `liferay/portal:7.4.3.132-ga132` (CE) |
+| MySQL          | `mysql:8.0` |
 | MongoDB        | `mongo:7` |
 | Elasticsearch  | `docker.elastic.co/elasticsearch/elasticsearch:8.13.0` |
 | NGINX          | `nginx:alpine` |
@@ -60,6 +61,7 @@ Ambiente de produção com Liferay Portal, MongoDB, Elasticsearch e NGINX em um 
 |----------------|----------------|--------------------|
 | NGINX          | 8080           | nginx              |
 | Liferay        | —              | liferay (8080)     |
+| MySQL          | —              | mysql (3306)       |
 | MongoDB        | —              | mongodb (27017)    |
 | Elasticsearch  | —              | elasticsearch (9200) |
 
@@ -71,20 +73,31 @@ liferay-prod/
   liferay/data/     # dados e portal-ext.properties
   liferay/deploy/   # artefatos para deploy
   liferay/logs/     # logs do Liferay
+  mysql/data/       # dados do MySQL (banco relacional do Liferay)
+  mysql/init/       # SQL de criação do DB lportal e usuário
   mongodb/data/     # dados do MongoDB
   mongodb/init/     # script de criação do DB e usuário
   elasticsearch/data/
   nginx/conf.d/     # configuração do reverse proxy
 ```
 
-## Liferay e MongoDB
+## Liferay, MySQL e MongoDB
 
-O Liferay está configurado para usar o **MongoDB como store do Document Library** (armazenamento de arquivos). A configuração está em `liferay/data/portal-ext.properties`. Após alterar essa configuração, reinicie o Liferay: `./scripts/restart.sh` ou `podman start liferay` (com o pod já rodando).
+- **Banco relacional (MySQL):** o Liferay usa o MySQL para todas as tabelas do portal (usuários, páginas, conteúdo, etc.). A configuração JDBC está em `liferay/data/portal-ext.properties`.
+- **MongoDB:** usado apenas como **store do Document Library** (armazenamento de arquivos). A configuração também está em `liferay/data/portal-ext.properties`.
 
-## Credenciais (MongoDB)
+Após alterar configurações, reinicie o Liferay: `./scripts/restart.sh` ou `podman start liferay` (com o pod já rodando).
 
-- **Root:** `root` / `rootProd@123`
-- **DB:** `lportal`
+## Credenciais
+
+**MySQL (banco relacional do Liferay)**  
+- **Root:** `root` / `rootProd@123`  
+- **DB:** `lportal`  
+- **Usuário Liferay:** `liferay` / `liferayProd@123`  
+
+**MongoDB (Document Library)**  
+- **Root:** `root` / `rootProd@123`  
+- **DB:** `lportal`  
 - **Usuário Liferay:** `liferay` / `liferayProd@123`
 
 ## Troubleshooting
